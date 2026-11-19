@@ -15,8 +15,8 @@ def test_successful_registration(monkeypatch):
     )
 
     assert register_user() is True
-    
-    
+
+
 def test_invalid_username(monkeypatch):
 
     answers = iter([
@@ -31,8 +31,8 @@ def test_invalid_username(monkeypatch):
     )
 
     assert register_user() is False
-    
-    
+
+
 def test_registration_with_default_handle(monkeypatch):
 
     answers = iter([
@@ -47,8 +47,8 @@ def test_registration_with_default_handle(monkeypatch):
     )
 
     assert register_user() is True
-    
-    
+
+
 def test_invalid_email(monkeypatch):
 
     answers = iter([

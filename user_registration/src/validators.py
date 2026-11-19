@@ -18,7 +18,7 @@ def validate_username(username):
         return False
 
     return True
-  
+
 
 def validate_email(email):
     if not email:
@@ -31,8 +31,8 @@ def validate_email(email):
         return False
 
     return True
-  
-  
+
+
 def validate_handle(handle):
 
     banned_words = {
@@ -60,8 +60,8 @@ def validate_handle(handle):
         return False
 
     return True
-  
-  
+
+
 def resolve_handle(username, handle):
 
     if not handle:

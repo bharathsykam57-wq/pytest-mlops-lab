@@ -6,6 +6,7 @@ from src.validators import (
 )
 from src.validators import resolve_handle
 
+
 def test_valid_username():
     assert validate_username("bharath123") is True
 
@@ -24,8 +25,8 @@ def test_banned_username():
 
 def test_banned_username_case_insensitive():
     assert validate_username("ADMIN") is False
-    
-    
+
+
 @pytest.mark.parametrize(
     "email, expected",
     [
@@ -39,7 +40,8 @@ def test_banned_username_case_insensitive():
 )
 def test_validate_email(email, expected):
     assert validate_email(email) is expected
-    
+
+
 @pytest.mark.parametrize(
     "handle, expected",
     [
@@ -57,8 +59,8 @@ def test_validate_email(email, expected):
 )
 def test_validate_handle(handle, expected):
     assert validate_handle(handle) is expected
-    
-    
+
+
 def test_default_handle():
     assert resolve_handle("bharath123", "") == "bharath123"
 
