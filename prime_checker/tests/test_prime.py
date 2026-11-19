@@ -44,3 +44,8 @@ def test_large_prime():
 
 def test_large_non_prime():
     assert is_prime(1000) is False
+
+
+
+def test_large_prime_number():
+    assert is_prime(104729) is True
