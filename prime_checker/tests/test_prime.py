@@ -1,7 +1,7 @@
 
 import pytest
 
-from src.prime import is_prime
+from bharath_prime_checker import is_prime
 
 
 @pytest.mark.parametrize(

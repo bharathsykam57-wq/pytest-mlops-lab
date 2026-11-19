@@ -16,3 +16,9 @@ htmlcov/
 
 # macOS files
 .DS_Store
+
+
+# Python packaging artifacts
+dist/
+build/
+*.egg-info/
