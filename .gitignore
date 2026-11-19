@@ -1,0 +1,18 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage files
+.coverage
+.coverage.*
+htmlcov/
+
+# macOS files
+.DS_Store
